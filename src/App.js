@@ -7,10 +7,13 @@ import {
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Home from './components/Home';
+import NoteState from './context/notes/NoteState';
+
 
 function App() {
   return (
     <>
+<NoteState>
     <Router>
     <Navbar/>
     <Routes>
@@ -20,9 +23,9 @@ function App() {
              
     </Routes>
   
-    </Router>   
+    </Router> 
+    </NoteState> 
       </>
-  );
+  )
 }
-
 export default App;
